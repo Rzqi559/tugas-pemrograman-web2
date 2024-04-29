@@ -1,0 +1,64 @@
+body {
+    font-family: "poppins", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: tomato;
+    height: 120px;
+    
+
+}
+.nav {
+    background: plum;
+    height: 80px;
+    
+}
+.footer {
+    background: skyblue;
+    height: 100px;
+}
+.main {
+    background: greenyellow;
+    height: 2500px;
+    padding: 40px;
+    font-size: 20px;
+   
+    
+}
+.aside {
+    background: yellow;
+}
+
+/*tampilan rtesponsive */
+@media all and (min-width:800px) {
+    .main {
+        flex: 2;
+    }
+    .aside {
+        order: 2;
+    }
+    .main {
+        order: 1;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1;
+    }
+}
